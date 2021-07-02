@@ -147,12 +147,26 @@ footer {
   align-items: center;
   height: 136px;
   background: #2a1d3f;
+  position: relative;
   span {
     margin-top: 5px;
   }
   nav {
     display: flex;
     gap: 2rem;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../img/bottom_e.png");
+    background-size: cover;
+    background-position: center;
+    width: 449px;
+    height: 452px;
+    bottom: -1px;
+    right: 63px;
+    position: absolute;
+    z-index: -1;
   }
 }
 
