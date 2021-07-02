@@ -180,3 +180,23 @@ a {
     border-color: white;
   }
 }
+
+@media (max-width: 768px) {
+  .name-generator {
+    // padding: 0 1.5rem;
+    .gender-selection {
+      flex-direction: column;
+    }
+  }
+
+  .main-container {
+    padding: 0 1.5rem;
+  }
+
+  .common-picks {
+    .name-box {
+      font-size: 1.15rem;
+      padding: 1rem;
+    }
+  }
+}
