@@ -1,0 +1,106 @@
+body {
+  background-color: #220d3d;
+  background-image: url("../img/bg.png");
+  background-position-y: 0;
+  background-position-x: center;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Old Standard TT", serif;
+  color: rgb(255, 208, 77);
+  background: linear-gradient(
+    0deg,
+    rgb(255, 238, 180) 0%,
+    rgb(241, 203, 112) 42%,
+    rgb(255, 255, 255) 45%,
+    rgb(255, 208, 77) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px 4.00602px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.bg-purple {
+  background: #360378;
+  color: white;
+}
+
+.ad {
+  border: 1px solid white;
+  width: 100%;
+  place-content: center;
+  display: grid;
+  padding: 4rem;
+  font-size: 2rem;
+}
+
+.name-generator {
+  font-family: "Old Standard TT", serif;
+  .name-box {
+    backdrop-filter: blur(40.0602px);
+    border-radius: 2rem;
+    font-size: 4rem;
+
+    background: rgba(31, 21, 26, 0.42);
+    border: 3px solid rgba(#d9c788, 0.8);
+    border-image-slice: 1;
+    // border-width: 4px;
+    // border-image-source: linear-gradient(-45deg, #d9c788, rgba(white, 0));
+    padding: 1em;
+    text-align: center;
+    position: relative;
+  }
+
+  .gender-selection {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+  }
+  .gender-btn {
+    color: #ffeeb3;
+    font-size: 2rem;
+    display: flex;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    span {
+      background: #4d2b13;
+      width: 100%;
+      border-radius: 1.25rem;
+      padding: 1rem 4rem 1rem 2rem;
+      height: 100%;
+
+      border: 2px solid rgba(#d9c788, 0.8);
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+      &:checked + span {
+        background: #b75a17;
+      }
+    }
+
+    &:hover {
+      span {
+        background: #693c1b;
+      }
+    }
+
+    img {
+      position: absolute;
+      bottom: 0;
+      right: -20px;
+    }
+  }
+}
